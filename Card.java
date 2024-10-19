@@ -1,9 +1,13 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 
 public class Card {
-    private int value; // Integer value from 2 to 14
-    private String name; // Name of the card (e.g., "2", "3", ..., "Jack", "Queen", "King", "Ace")
+    private int value; // Integer values
+    private String name; // Name of the cards ")
 
-    // Constructor for numeric cards
+    // Constructor = cards
     public Card(int value) {
         if (value < 2 || value > 14) {
             throw new IllegalArgumentException("Card value must be between 2 and 14.");
@@ -12,7 +16,7 @@ public class Card {
         this.name = getCardName(value);
     }
 
-    // Method to get the name based on the value
+    // Method Names & Values
     private String getCardName(int value) {
         switch (value) {
             case 11:
@@ -28,12 +32,12 @@ public class Card {
         }
     }
 
-    // Getter for value
+    // Getter for values
     public int getValue() {
         return value;
     }
 
-    // Getter for name
+    // Getter for names
     public String getName() {
         return name;
     }
