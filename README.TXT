@@ -4,9 +4,9 @@ Tell the reader (someone who does not know anything about this project)
 all they need to know. The comments should usually include at least:
 ------------------------------------------------------------------------
 
-PROJECT TITLE:
+PROJECT TITLE: Week 6
 PURPOSE OF PROJECT:
 VERSION or DATE:
 HOW TO START THIS PROJECT:
-AUTHORS:
+AUTHORS: Darin Sicurello 
 USER INSTRUCTIONS:
