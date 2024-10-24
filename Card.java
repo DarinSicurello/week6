@@ -6,6 +6,12 @@ import java.util.List;
 public class Card {
     private int value; // Integer values
     private String name; // Name of the cards ")
+    // Q1a  Fields
+    // 1. value (contains a value from 2-14 representing cards 2-Ace)
+    // 2.     name (e.g. Ace of Diamonds, or Two of Hearts)
+    // ii.    Methods
+    // 1.     Getters and Setters
+    // 2.     describe (prints out information about a card)
 
     // Constructor = cards
     public Card(int value) {

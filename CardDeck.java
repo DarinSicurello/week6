@@ -12,11 +12,17 @@ public class CardDeck {
       // map deck of cards
         Map<String, String> CardDeck = new HashMap<>();
 
-        //  cards
+        // Q 1b 1.     Fields
+
         String[] suits = {"Hearts", "Diamonds", "Clubs", "Spades"};
         String[] ranks = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"};
 
-        // Populate 
+        // Qb 2  Methods
+           // 1. shuffle (randomizes the order of the cards)
+           // 2.  draw (removes and returns the top card of the Cards field)
+           // 3.  In the constructor, when a new Deck is instantiated,
+           //  .. the Cards field should be populated with the standard 52 cards.
+
         for (String suit : suits) {
             for (String rank : ranks) {
                 String cardName = rank + " of " + suit;
@@ -30,10 +36,10 @@ public class CardDeck {
     }
 
         // initialize the deck  
-        private void initializeDeck() {
+        public void initialize (deck);{
         for (int value = 2; value <= 14; value++) 
             deck.add(new Card(value));
-        }
+        } 
     
 
         //  shuffle the deck
