@@ -9,7 +9,7 @@ import java.util.List;
 public class App {
     public static void main(String[] args) {
         // Deck of cards
-        CardDeck deck = new deck();
+        CardDeck deck = new CardDeck();
 
         // Create two players
         Player player1 = new Player("Jane");

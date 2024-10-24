@@ -2,11 +2,13 @@
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Map;
+import java.util.HashMap;
 
 public class CardDeck {
     
-    private List<CardDeck> deck;
-      public static void main(String[] args) {
+    private List<CardDeck> deck = new ArrayList<CardDeck>(); 
+     
 
    
       // map deck of cards
@@ -22,25 +24,27 @@ public class CardDeck {
            // 2.  draw (removes and returns the top card of the Cards field)
            // 3.  In the constructor, when a new Deck is instantiated,
            //  .. the Cards field should be populated with the standard 52 cards.
-
+        public void PrintDeck (){
         for (String suit : suits) {
             for (String rank : ranks) {
                 String cardName = rank + " of " + suit;
-                deck.put(cardName, rank);
+                Card card = new Card();
+                card.get(cardName, rank);
             }
         }
-
+    }
         // Print  cards
+         public void PrintCards (){
         for (Map.Entry<String, String> entry : deck.entrySet()) {
             System.out.println(entry.getKey());
     }
-
+}
         // initialize the deck  
-        public void initialize (deck);{
-        for (int value = 2; value <= 14; value++) 
-            deck.add(new Card(value));
+       public void initialize (){
+        for (int value = 2; value <= 14; value++) {
+            deck.add(new CardDeck(value));
         } 
-    
+    }
 
         //  shuffle the deck
         public void shuffle() {

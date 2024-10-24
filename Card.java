@@ -21,9 +21,9 @@ public class Card {
         this.value = value;
         this.name = getCardName(value);
     }
-
+    public Card(){}
     // Method Names & Values
-    private String getCardName(int value) {
+    public String getCardName(int value) {
         switch (value) {
             case 11:
                 return "Jack";
